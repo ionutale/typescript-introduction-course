@@ -1,7 +1,7 @@
 "use strict";
 // primitives
 const age = 0;
-const maried = true;
+const isMarried = true;
 const username = 'ion';
 // union types
 // userId can be a number in case of an auto incremental id
@@ -18,3 +18,16 @@ var allowedColors;
     allowedColors[allowedColors["BLUE"] = 2] = "BLUE";
 })(allowedColors || (allowedColors = {}));
 console.log(allowedColors);
+const userDario = {
+    name: "dario",
+    age: 27,
+    isMarried: false,
+    hasAJob: true,
+};
+// literal types
+const email = "iutale@florence-consulting.it";
+// why is usefull the literal type?
+const alignment = "center";
+// no value primitives
+const isSunny = undefined;
+const isRaining = null;

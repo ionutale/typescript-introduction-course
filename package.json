@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ionutale/typescript-introduction-course#readme",
   "devDependencies": {
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
   }
 }
