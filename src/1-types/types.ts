@@ -47,7 +47,7 @@ interface UserInterface {
 } 
 
 // literal types
-const email: "iutale@florence.consulting.it" = "iutale@florence.consulting.it";
+const email: "iutale@florence-consulting.it" = "iutale@florence-consulting.it";
 
 // why is usefull the literal type?
 const alignment: "left" | "right" | "center" = "center";
