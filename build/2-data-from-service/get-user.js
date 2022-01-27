@@ -13,19 +13,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
-function getUser() {
-    return __awaiter(this, void 0, void 0, function* () {
-        try {
-            let user;
-            let res = yield axios_1.default.get('./src/2-data-from-service/user.json');
-            user = res.data;
-            console.log(user);
-        }
-        catch (error) {
-            console.log(error);
-        }
-    });
-}
-(() => __awaiter(void 0, void 0, void 0, function* () {
-    yield getUser();
-}));
+const getUser = () => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        let user;
+        let res = yield axios_1.default.get('./src/2-data-from-service//source-data/user.json');
+        user = res.data;
+        console.log("the user is: ", user);
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+});
+getUser();
