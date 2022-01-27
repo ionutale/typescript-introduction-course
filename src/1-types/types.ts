@@ -17,7 +17,7 @@ type mapPinType = {
   latitude: number;
   longitude: number;
 }
-const mapPin: mapPinType = {latitude: 1.1423123, longitude: 1.3413241}
+const mapPin: mapPinType = { latitude: 1.1423123, longitude: 1.3413241 }
 
 // enum types
 enum allowedColors {
@@ -38,13 +38,13 @@ const userDario: UserInterface = {
   name: "dario",
   age: 27,
   isMarried: false,
-  hasAJob: true,
 }
 
 // interface can be changed later on
 interface UserInterface {
-  hasAJob: boolean
-} 
+  speaksEnglish?: boolean
+}
+userDario.speaksEnglish = true
 
 // literal types
 const email: "iutale@florence-consulting.it" = "iutale@florence-consulting.it";
@@ -56,4 +56,41 @@ const alignment: "left" | "right" | "center" = "center";
 const isSunny: undefined = undefined;
 const isRaining: null = null;
 
+// tuples 
+const address: [string, number, string] = ['via laiano', 5, 'Pisa']
+// use state in react returns a tuple
 
+// tuples are not fixed array, can be altered later on
+address.push('Italy')
+console.log(address) // ['via laiano', 5, 'Pisa', 'Italy']
+
+// void type
+function executeBatch(): void {
+  console.log('batch start executing')
+  console.log('batch is running')
+  console.log('batch finshed executing')
+}
+
+// unknown type
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = 'Italy'
+//userName = userInput; // no error if type is any 
+if (typeof userInput === 'string') {
+  userName = userInput;
+}
+
+// never type
+function generateError(message: string, code: number): never {
+  throw { message, code }
+}
+generateError('not found', 404)
+
+function gameLoop(): never {
+  while (true) {
+    // loop 60 times per seconds
+    // game logic and render to the screen
+  }
+}
