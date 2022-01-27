@@ -13,8 +13,8 @@
   - [x] Void Types
   - [x] Unknown Types
   - [x] Never Types
-  - [] classes 
-  - [] decorators
+  - [ ] classes 
+  - [ ] decorators
 
 ## Open in Gitpod
 
