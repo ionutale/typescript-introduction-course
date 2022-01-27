@@ -3,18 +3,18 @@
 **This is just an introduction TS course**
 
 **Covered Sections**
-[x] Primitive types
-[x] Union Types
-[x] Type Aliases
-[x] Enum Types
-[x] Interfaces as types
-[x] Literal Types
-[x] Tuples
-[x] Void Types
-[x] Unknown Types
-[x] Never Types
-[] classes 
-[] decorators
+  [x] Primitive types
+  [x] Union Types
+  [x] Type Aliases
+  [x] Enum Types
+  [x] Interfaces as types
+  [x] Literal Types
+  [x] Tuples
+  [x] Void Types
+  [x] Unknown Types
+  [x] Never Types
+  [] classes 
+  [] decorators
 
 ## Open in Gitpod
 
